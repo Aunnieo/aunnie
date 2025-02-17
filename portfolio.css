@@ -1,0 +1,137 @@
+
+/* Title Styling */
+.Title-Portfolio {
+    font-size: 70px;
+    text-align: center;
+}
+
+/* CSS codex for the me picture */
+.me {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.Welcome{
+    text-align: center;
+}
+
+
+.Title-Portfolio {
+    font-family: 'Amatic SC', cursive;
+    background-color: #f4f4f4;
+}
+
+.nav-bar {
+    background-color: #044d29;
+    display: flex;
+    justify-content: center; /* Centers the nav bar */
+    align-items: center;
+    padding: 15px 0;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 15px; /* Spaces out the links */
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace; /* Box-like font */
+    border: 2px solid transparent; /* Makes the border invisible initially */
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-bar a:hover {
+    border: 2px solid white; /* Adds a visible border on hover */
+    border-radius: 5px; /* Makes the border rounded */
+}
+
+/* Active Link */
+.nav-bar a.active {
+    border: 2px solid #ffcc00; /* Active link has a gold border */
+    border-radius: 5px;
+}
+
+/*
+Nav bar number 2 for my work exp page
+*/
+.nav-bar2   {
+    background-color: #044d29;
+    display: flex;
+    justify-content: center; /* Centers the nav bar */
+    align-items: center;
+    padding: 15px 0;
+}
+
+.nav-bar2 a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 15px; /* Spaces out the links */
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace; /* Box-like font */
+    border: 2px solid transparent; /* Makes the border invisible initially */
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-bar2 a:hover {
+    border: 2px solid white; /* Adds a visible border on hover */
+    border-radius: 5px; /* Makes the border rounded */
+}
+
+/* Active Link */
+.nav-bar2 a.active2 {
+    border: 2px solid #ffcc00; /* Active link has a gold border */
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+    gap: 1px; /* Space between image and text */
+}
+
+.Intro-Text {
+    font-size: 20px;
+    padding: 2; /* Remove unnecessary padding */
+}
+
+.center-the-image {
+    display: block;
+    margin-left: 20%;
+    margin-right: 0;
+    width: 30%;
+  }
+
+/* Container to hold the two boxes */
+.box-container {
+    display: flex; /* Enables Flexbox */
+    gap: 20px; /* Adds space between the boxes */
+    justify-content: center; /* Centers the boxes horizontally */
+}
+
+/* Styles for both boxes */
+.box, .box-work {
+    width: 300px; /* Sets the width of each box */
+    padding: 20px; /* Adds inner spacing */
+    border: 2px solid #ccc; /* Creates a border */
+    border-radius: 10px; /* Rounds the corners */
+    background-color: #f9f9f9; /* Light gray background */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    text-align: center; /* Centers text inside the box */
+}
+
+/* Optional: Remove extra spacing in list */
+ul {
+    padding-left: 20px; /* Adds indentation */
+    list-style-type: disc; /* Adds bullets */
+    margin: 10px 0; /* Adds spacing around the list */
+}
+
+.exp-title{
+    text-align: center;
+    font-size: 50px;
+
+}
