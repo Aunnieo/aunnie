@@ -1,137 +1,237 @@
 
-/* Title Styling */
-.Title-Portfolio {
-    font-size: 70px;
-    text-align: center;
-}
-
-/* CSS codex for the me picture */
-.me {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-}
-
-.Welcome{
-    text-align: center;
-}
-
-
-.Title-Portfolio {
+/* Base styling */
+body {
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+    background-color: #f9f9f9;
     font-family: 'Amatic SC', cursive;
-    background-color: #f4f4f4;
-}
-
-.nav-bar {
-    background-color: #044d29;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation Bar */
+  .nav-bar {
     display: flex;
-    justify-content: center; /* Centers the nav bar */
-    align-items: center;
-    padding: 15px 0;
-}
-
-.nav-bar a {
-    color: white;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  .exp-title{
+    text-align: center;
+  }
+  
+  .nav-bar a {
+    margin: 0 15px;
     text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 15px; /* Spaces out the links */
-    font-size: 18px;
-    font-family: 'Courier New', Courier, monospace; /* Box-like font */
-    border: 2px solid transparent; /* Makes the border invisible initially */
-    transition: all 0.3s ease;
-}
-
-/* Hover Effect */
-.nav-bar a:hover {
-    border: 2px solid white; /* Adds a visible border on hover */
-    border-radius: 5px; /* Makes the border rounded */
-}
-
-/* Active Link */
-.nav-bar a.active {
-    border: 2px solid #ffcc00; /* Active link has a gold border */
-    border-radius: 5px;
-}
-
-/*
-Nav bar number 2 for my work exp page
-*/
-.nav-bar2   {
-    background-color: #044d29;
-    display: flex;
-    justify-content: center; /* Centers the nav bar */
-    align-items: center;
-    padding: 15px 0;
-}
-
-.nav-bar2 a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 15px; /* Spaces out the links */
-    font-size: 18px;
-    font-family: 'Courier New', Courier, monospace; /* Box-like font */
-    border: 2px solid transparent; /* Makes the border invisible initially */
-    transition: all 0.3s ease;
-}
-
-/* Hover Effect */
-.nav-bar2 a:hover {
-    border: 2px solid white; /* Adds a visible border on hover */
-    border-radius: 5px; /* Makes the border rounded */
-}
-
-/* Active Link */
-.nav-bar2 a.active2 {
-    border: 2px solid #ffcc00; /* Active link has a gold border */
-    border-radius: 5px;
-}
-
-.container {
-    display: flex;
-    align-items: center; /* Align image and text vertically */
-    gap: 1px; /* Space between image and text */
-}
-
-.Intro-Text {
-    font-size: 20px;
-    padding: 2; /* Remove unnecessary padding */
-}
-
-.center-the-image {
-    display: block;
-    margin-left: 20%;
-    margin-right: 0;
-    width: 30%;
+    color: #333;
+    font-size: 24px;
+    position: relative;
+  }
+  
+  .nav-bar a:hover {
+    color: #8A2BE2; /* A hint of purple */
+  }
+  
+  /* Title and Welcome Text */
+  .Title-Portfolio {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 20px;
+  }
+  
+  .Welcome {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  /* Main Container with a scrapbook look */
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   }
 
-/* Container to hold the two boxes */
-.box-container {
-    display: flex; /* Enables Flexbox */
-    gap: 20px; /* Adds space between the boxes */
-    justify-content: center; /* Centers the boxes horizontally */
+  .container img {
+    width: 50%;
+    height: auto;
+    display: block;
+  }
+
+.image-container{
+  max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.box-work{
+  max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Styles for both boxes */
-.box, .box-work {
-    width: 300px; /* Sets the width of each box */
-    padding: 20px; /* Adds inner spacing */
-    border: 2px solid #ccc; /* Creates a border */
-    border-radius: 10px; /* Rounds the corners */
-    background-color: #f9f9f9; /* Light gray background */
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-    text-align: center; /* Centers text inside the box */
-}
-
-/* Optional: Remove extra spacing in list */
-ul {
-    padding-left: 20px; /* Adds indentation */
-    list-style-type: disc; /* Adds bullets */
-    margin: 10px 0; /* Adds spacing around the list */
-}
-
-.exp-title{
+  .neu-image {
+    /* Your styles here */
+    width: 50%;
+    border: 2px solid #ccc;
+  }
+  
+  
+  
+  
+  /* Image Styling with a playful rotation */
+  .center-the-image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 3px solid #8B4513; /* Brown border */
+  } 
+  
+  /* Intro Text Section */
+  .intro-text h1 {
     text-align: center;
-    font-size: 50px;
+    color: #228B22; /* Green */
+    margin-bottom: 10px;
+  }
+  
+  .intro-text ul {
+    list-style: none;
+    padding: 0;
+    font-size: 24px;
+  }
+  
+  .intro-text li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  /* Doodle bullet points for a hand-crafted feel */
+  .intro-text li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: #800080; /* Purple */
+  }
 
-}
+    .image-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+
+    .summit-work {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .summit2-work {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .cfa-work {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+    .up-work {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .cfa-img{
+     width: 50%;
+    border: 2px solid #ccc;
+  }
+
+
+  .marsha-img{
+     width: 50%;
+    border: 2px solid #ccc;
+  }
+
+
+  .summit-img{
+     width: 50%;
+    border: 2px solid #ccc;
+  }
+
+  .up-img{
+     width: 50%;
+    border: 2px solid #ccc;
+  }
+
+
+ 
+  .project {
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .terminal {
+    background-color: #000;
+    color: #0f0;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 300px;
+  }
+  .terminal {
+    background-color: #000;
+    color: #0f0;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 300px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+
+
+
+
+
+
+  
+
+  
